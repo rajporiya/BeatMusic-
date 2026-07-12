@@ -9,35 +9,30 @@ import {
 import { Link } from "react-router-dom"
 import {
   Avatar,
-  AvatarBadge,
-  AvatarFallback,
   AvatarImage,
 } from "@/components/ui/avatar"
 
 const Navbar = () => {
   return (
-  <div className="flex items-center   ">
+  <div className="flex items-center">
 
-    {/* Left */}
     <div className="flex-1 flex justify-start">
       <BeatMusicLogo className="w-8" />
     </div>
 
-    {/* Center */}
     <div className="flex-1 flex justify-center items-center gap-2">
       <Button className="h-9 w-9 rounded-full">
         <House className="h-5 w-5" />
       </Button>
 
       <InputGroup className="max-w-[450px]">
-        <InputGroupInput placeholder="Search..." />
+        <InputGroupInput placeholder="Search..." /> 
         <InputGroupAddon>
           <Search />
         </InputGroupAddon>
       </InputGroup>
     </div>
 
-    {/* Right */}
     <div className="flex-1 flex justify-end items-center gap-6">
       <Link to="/">Explore Premium</Link>
 
