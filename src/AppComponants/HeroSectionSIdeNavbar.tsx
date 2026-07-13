@@ -1,6 +1,7 @@
 import { ArrowLeftToLine, ArrowRightToLine, Maximize2, Plus } from 'lucide-react'
 import React, { useState } from 'react'
 import HeroMiddleSection from './HeroMiddleSection'
+import HeroPlaySong from './HeroPlaySong'
 
 const HeroSectionSIdeNavbar = () => {
     const [leftOpen, setLeftOpen] = useState(true)
@@ -36,6 +37,7 @@ const HeroSectionSIdeNavbar = () => {
       <div className="flex-1 bg-[#121212] rounded-[10px] ">
         <>
         <HeroMiddleSection />
+        <HeroPlaySong />
         </>
       </div>
 
